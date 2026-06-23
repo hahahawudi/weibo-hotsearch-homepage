@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>微博热搜舆情分析系统</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      background: linear-gradient(135deg, #fff7f2, #eef5ff);
+      color: #222;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 80px 30px;
+      text-align: center;
+    }
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin: 0 auto 25px;
+      border-radius: 26px;
+      background: linear-gradient(135deg, #ff4b2b, #ff8a00);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      box-shadow: 0 12px 30px rgba(255, 92, 40, 0.28);
+    }
+    h1 {
+      font-size: 42px;
+      margin: 10px 0;
+      color: #f04b23;
+    }
+    .subtitle {
+      font-size: 20px;
+      color: #555;
+      margin-bottom: 40px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 40px;
+    }
+    .card {
+      background: rgba(255,255,255,0.9);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: left;
+    }
+    .card h3 {
+      color: #1677ff;
+      margin-top: 0;
+    }
+    .desc {
+      margin-top: 40px;
+      line-height: 1.9;
+      font-size: 17px;
+      color: #444;
+      background: rgba(255,255,255,0.85);
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    @media (max-width: 768px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      h1 {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🔥</div>
+    <h1>微博热搜舆情分析系统</h1>
+    <div class="subtitle">热搜监测 · 评论分析 · 情感识别 · 风险预警</div>
+
+    <div class="desc">
+      本应用用于高校毕业设计与科研学习，主要面向微博热搜舆情分析场景，
+      实现热搜话题监测、微博内容采集、评论数据分析、情感倾向识别、
+      互动数据统计、传播路径分析和舆情风险预警等功能。
+      数据仅用于学习研究和系统功能演示，不用于商业营销或违规传播。
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>热搜监测</h3>
+        <p>周期性采集微博热搜榜数据，分析话题排名、热度值和热搜标签变化。</p>
+      </div>
+      <div class="card">
+        <h3>评论分析</h3>
+        <p>围绕热搜话题采集相关微博内容和评论数据，提取用户观点与互动信息。</p>
+      </div>
+      <div class="card">
+        <h3>舆情预警</h3>
+        <p>结合情感分析、互动强度和传播趋势，识别潜在舆情风险。</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
